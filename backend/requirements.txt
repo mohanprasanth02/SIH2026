@@ -1,0 +1,55 @@
+# SatQuery AI - Backend Dependencies
+# Python 3.11+
+
+# ─── FastAPI Core ─────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+aiofiles==23.2.1
+pydantic==2.7.4
+pydantic-settings==2.3.3
+
+# ─── Database ────────────────────────────────────────────────────
+sqlalchemy==2.0.30
+asyncpg==0.29.0          # async PostgreSQL driver
+psycopg2-binary==2.9.9   # sync driver for alembic
+alembic==1.13.1
+
+# ─── Auth ────────────────────────────────────────────────────────
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# ─── AI / ML ─────────────────────────────────────────────────────
+torch>=2.1.0
+torchvision>=0.16.0
+transformers>=4.41.0
+accelerate>=0.30.0
+google-generativeai>=0.7.0
+
+# ─── Remote Sensing / GIS ────────────────────────────────────────
+rasterio>=1.3.10
+GDAL>=3.8.4              # may need system-level GDAL
+geopandas>=0.14.4
+shapely>=2.0.4
+pyproj>=3.6.1
+fiona>=1.9.6
+xarray>=2024.5.0
+
+# ─── Image Processing ─────────────────────────────────────────────
+numpy>=1.26.0
+opencv-python-headless>=4.9.0
+Pillow>=10.3.0
+scikit-image>=0.23.2
+
+# ─── Report Generation ───────────────────────────────────────────
+reportlab>=4.2.0
+WeasyPrint>=62.0
+
+# ─── Cache / Queue ───────────────────────────────────────────────
+redis>=5.0.4
+# celery>=5.4.0           # Uncomment for Celery task queue
+
+# ─── Utilities ────────────────────────────────────────────────────
+python-dotenv==1.0.1
+httpx==0.27.0
+structlog==24.2.0

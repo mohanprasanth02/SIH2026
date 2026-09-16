@@ -1,0 +1,32 @@
+# SatQuery AI - Minimal Requirements (Quick Start)
+# For full production setup, use requirements.txt
+
+# Core
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+pydantic-settings==2.3.3
+pydantic==2.7.4
+python-dotenv==1.0.1
+
+# Database (SQLite for dev)
+sqlalchemy==2.0.30
+aiosqlite==0.20.0
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# AI/ML
+torch>=2.1.0
+transformers>=4.41.0
+google-generativeai>=0.7.0
+
+# Remote sensing / GIS
+rasterio>=1.3.10
+numpy>=1.26.0
+Pillow>=10.3.0
+
+# HTTP
+httpx==0.27.0
+aiofiles==23.2.1
